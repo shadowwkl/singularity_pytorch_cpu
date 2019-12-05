@@ -44,11 +44,12 @@ This container runs Pytorch CPU
         cmake \
         wget \
         cython \
-        git
+        git \
+	ffmpeg
     apt-get clean
     
-    apt-get update
-    apt-get install ffmpeg
+
+
 
 
 
