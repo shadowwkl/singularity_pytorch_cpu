@@ -44,7 +44,9 @@ This container runs Pytorch CPU
         cmake \
         wget \
         cython \
-        git
+        git \
+        deb-multimedia-keyring \
+	ffmpeg \
     apt-get clean
 
     # Update pip
@@ -75,7 +77,6 @@ This container runs Pytorch CPU
     pip install opencv-python
     pip install matplotlib
     pip install scipy
-    pip install ffmpeg-python
     
     pip install torch==1.3.1+cpu torchvision==0.4.2+cpu -f https://download.pytorch.org/whl/torch_stable.html
 
