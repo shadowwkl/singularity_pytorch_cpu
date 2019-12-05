@@ -44,10 +44,18 @@ This container runs Pytorch CPU
         cmake \
         wget \
         cython \
-        git \
-        deb-multimedia-keyring \
-	ffmpeg \
+        git
     apt-get clean
+    
+    apt-get update
+    apt-get install deb-multimedia-keyring
+    apt-get update
+    apt-get install ffmpeg
+
+
+
+
+    
 
     # Update pip
     pip install --no-cache-dir --upgrade pip==9.0.3
